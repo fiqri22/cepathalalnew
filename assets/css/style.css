@@ -1,0 +1,621 @@
+body {
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  color: #444444;
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* p {
+  font-size: 14px;
+} */
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+/* Header */
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 5px 0;
+  background-color: rgba(60, 135, 221, 0.95);
+}
+
+#header.header-scrolled,
+#header.header-inner-pages {
+  background-color: rgba(60, 135, 221, 0.97);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  padding: 1px 0;
+}
+/* Header End */
+
+/* Navbar */
+.navbar .navbar-brand {
+  /* font-family: "WindSong", cursive; */
+  font-family: "Comfortaa", cursive;
+  font-size: x-large;
+  color: #fff;
+}
+
+.navbar .navbar-brand:hover {
+  color: rgb(243, 243, 243);
+}
+
+.navbar .logo {
+  height: 36px;
+}
+
+.navbar .active {
+  background: linear-gradient(#ff5151, #ff5151) center 3em no-repeat;
+  background-size: 100% 2px;
+}
+
+.nav-link {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  color: #eee;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 12px;
+  margin: 0 18px;
+  font-size: 0.9em;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: width 0.2s ease-out;
+  background-color: #ff5151;
+}
+.nav-link:hover::before {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #header {
+    background-color: rgba(60, 135, 221, 0.9);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+/* Navbar End */
+
+/* Jumbotron */
+.jumbotron {
+  /* padding-top: 10rem; */
+  background-color: #eaeaea50;
+  /* background-image: url("../img/jumbotron-svg.png"); */
+  background-repeat: no-repeat;
+  /* background-position: bottom; */
+  /* background-attachment: fixed; */
+  background-size: cover;
+  color: #eaeaea;
+  overflow: hidden;
+}
+
+.jumbotron h1 {
+  margin-bottom: 1rem;
+  font-size: 42px;
+  /* font-family: "Satisfy", serif; */
+  color: #444444;
+}
+
+.jumbotron h2,
+.jumbotron h3,
+.jumbotron p {
+  margin-bottom: 2rem;
+  font-size: 22px;
+  /* font-family: "Raleway", sans-serif;
+  color: #eee;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold; */
+}
+
+.jumbotron a {
+  margin-bottom: 1rem;
+  /* border-radius: 10px; */
+}
+
+@media (max-width: 425px) {
+  .jumbotron {
+    padding-top: 6rem;
+  }
+}
+/*  Jumbotron End */
+
+/*Tentang*/
+/* .tentang {
+  background-color: #fff;
+} */
+
+/* .tentang ul {
+  padding: 0;
+  list-style: none;
+} */
+
+/* .tentang i {
+  color: #3c87dd;
+} */
+/*Tentang End*/
+
+/* Why */
+
+/* Why End */
+.why {
+  padding: 0;
+  background-color: #eaeaea40;
+}
+.why ul {
+  padding: 0;
+  list-style: none;
+}
+
+.why i {
+  color: #3c87dd;
+}
+/* Fitur */
+.fitur {
+  background-color: #fff;
+}
+
+.fitur .box {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 1px 0 5px 0 rgba(68, 88, 144, 0.2);
+}
+
+.fitur .box i {
+  color: #7ea6f4;
+  font-size: 45px;
+  padding-right: 10px;
+  /* line-height: 1; */
+}
+
+.fitur .box h3 {
+  font-weight: 600;
+  margin: 10;
+  /* line-height: 1; */
+  font-size: 16px;
+}
+
+.fitur .box p {
+  font-size: 14px;
+}
+/* Fitur End */
+
+/* Produk */
+.produk .container {
+  padding-bottom: 3rem;
+}
+
+.produk .box {
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #f9f9f9;
+}
+
+.produk .box h3 {
+  padding: 15px;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #493c3e;
+}
+
+.produk .box h5 {
+  font-size: 22px;
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.produk .box h4 {
+  font-size: 42px;
+  color: #599deb;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
+.produk .box h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+
+.produk .box h4 span {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.produk .box ul {
+  padding: 0;
+  list-style: none;
+  color: #493c3e;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.produk .box ul li {
+  padding-bottom: 8px;
+}
+
+.produk .box ul i {
+  color: #599deb;
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+.produk .box ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.produk .box .btn-wrap {
+  padding: 15px;
+  text-align: center;
+}
+
+.produk .box .btn-buy {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 40px 10px 40px;
+  border-radius: 50px;
+  border: 2px solid #599deb;
+  color: #599deb;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.produk .box .btn-buy:hover {
+  background: #599deb;
+  color: #fff;
+}
+
+.produk .recommended {
+  background-color: rgb(17, 17, 17);
+  border-color: #d0ad00;
+}
+
+.produk .recommended .btn-buy {
+  border: 2px solid #d0ad00;
+  color: #d0ad00;
+}
+
+.produk .recommended .btn-buy:hover {
+  background: #d0ad00;
+  border-color: #d0ad00;
+}
+
+.produk .recommended-badge {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 13px;
+  padding: 3px 25px 6px 25px;
+  background: #d0ad00;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.produk .recommended h3 {
+  color: #d0ad00;
+}
+.produk .recommended h4 {
+  color: #d0ad00;
+}
+/* Produk End */
+
+/* Pemesanan */
+.pemesanan {
+  background-color: #eaeaea40;
+}
+
+.pemesanan h5 {
+  font-weight: bold;
+}
+
+.pemesanan .box i {
+  font-size: 60px;
+  color: #3c87dd;
+}
+
+.pemesanan img {
+  width: 80px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.pemesanan img:hover {
+  cursor: pointer;
+  width: 100px;
+}
+
+.pemesanan a {
+  border-radius: 100px;
+  text-decoration: none;
+}
+.pemesanan p a:hover {
+  color: #599deb;
+  text-decoration: underline;
+}
+/* Pemesanan End */
+
+/* FAQ */
+.faq {
+  padding-top: 2rem;
+}
+
+.faq a {
+  text-decoration: none;
+  color: #3c87dd;
+}
+.faq a:hover {
+  text-decoration: underline;
+}
+
+.faq .faq-list {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li {
+  border-bottom: 1px solid #f1eeef;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.faq .faq-list .question {
+  display: block;
+  position: relative;
+  font-family: #3c87dd;
+  /* font-size: 18px; */
+  line-height: 24px;
+  font-weight: 400;
+  padding-left: 25px;
+  cursor: pointer;
+  color: #3c87dd;
+  transition: 0.3s;
+}
+
+.faq .faq-list i {
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 25px;
+}
+
+.faq .faq-list .icon-show {
+  display: none;
+}
+
+.faq .faq-list .collapsed {
+  color: black;
+}
+
+.faq .faq-list .collapsed:hover {
+  color: #3c87dd;
+}
+
+.faq .faq-list .collapsed .icon-show {
+  display: inline-block;
+  transition: 0.6s;
+}
+
+.faq .faq-list .collapsed .icon-close {
+  display: none;
+  transition: 0.6s;
+}
+
+/* FAQ End */
+
+/* Invite */
+.invite {
+  padding: 3rem 0;
+  background-color: #135589;
+}
+
+.invite h4 {
+  padding: 0.3rem;
+  font-weight: 700;
+}
+
+.invite a {
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 425px) {
+  .invite {
+    padding: 2rem 0;
+  }
+  .invite h4 {
+    padding-bottom: 2rem;
+    font-size: 22px;
+  }
+}
+/* Invite End */
+
+/* Kontak */
+.kontak {
+  /* background-color: #f7f7f7; */
+  background-color: #404040;
+  padding-bottom: 3.5rem;
+}
+
+.kontak li {
+  list-style: none;
+}
+.kontak li a {
+  text-decoration: none;
+  /* color: #444444; */
+  color: #fff;
+}
+
+.kontak li a:hover {
+  color: #599deb;
+  cursor: pointer;
+}
+
+.kontak .brand {
+  font-family: "WindSong", cursive;
+  font-size: x-large;
+}
+
+.kontak h4 {
+  font-weight: bold;
+}
+
+.kontak i:hover {
+  color: #599deb;
+}
+
+.kontak .sosmed a {
+  /* color: #666666; */
+  color: #fff;
+  transition: 0.3s;
+}
+
+.kontak .sosmed a:hover {
+  color: #599deb;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 425px) {
+  .kontak {
+    padding-bottom: 1rem;
+  }
+  .kontak .sosmed {
+    justify-content: center;
+    text-align: center;
+  }
+}
+/* Kontak End */
+
+/* Footer */
+footer {
+  /* background-color: #e2edff; */
+  border-top: outset;
+  border-color: #686868;
+  background-color: #404040;
+  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #599deb;
+}
+
+footer a:hover {
+  color: #6db1ff;
+  text-decoration: underline;
+}
+/* Footer End */
+
+/* WhatsApp */
+.whatsapp {
+  position: fixed;
+  right: 10px;
+  bottom: 64px;
+  z-index: 996;
+  width: 55px;
+  /* height: 40px; */
+  /* border-radius: 50px; */
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.whatsapp i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.whatsapp:hover {
+  cursor: pointer;
+  width: 70px;
+}
+
+/* WhatsApp End */
+
+/* Back to top*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #3c87dd;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #599deb;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Back to top End */
+
+section {
+  padding-top: 6rem;
+}
+
+#btnPesan {
+  border-width: medium;
+}
