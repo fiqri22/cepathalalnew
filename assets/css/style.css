@@ -88,7 +88,7 @@ img {
 
 @media (max-width: 768px) {
   #header {
-    background-color: rgba(60, 135, 221, 0.9);
+    background-color: rgba(60, 135, 221, 0.95);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   }
 }
@@ -156,8 +156,6 @@ img {
 /*Tentang End*/
 
 /* Why */
-
-/* Why End */
 .why {
   padding: 0;
   background-color: #eaeaea40;
@@ -170,6 +168,8 @@ img {
 .why i {
   color: #3c87dd;
 }
+/* Why End */
+
 /* Fitur */
 .fitur {
   background-color: #fff;
@@ -187,13 +187,11 @@ img {
   color: #7ea6f4;
   font-size: 45px;
   padding-right: 10px;
-  /* line-height: 1; */
 }
 
 .fitur .box h3 {
   font-weight: 600;
   margin: 10;
-  /* line-height: 1; */
   font-size: 16px;
 }
 
@@ -454,7 +452,7 @@ img {
 }
 
 .invite h4 {
-  padding: 0.3rem;
+  padding-top: 0.3rem;
   font-weight: 700;
 }
 
@@ -545,7 +543,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #6db1ff;
+  color: #7ea6f4;
   text-decoration: underline;
 }
 /* Footer End */
